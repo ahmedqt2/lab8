@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Development Certificate</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Web Development Certificate</h1>
+      <p>The programme begins with building pages in HTML and CSS. Students then use JavaScript to make pages interactive and build their first back-end with Node.js and Express.</p>
+    </header>
+
+    <div class="api-panel">
+      <section aria-labelledby="routes-heading">
+        <h2 id="routes-heading">Try the API</h2>
+        <div class="routes">
+          <button type="button" data-path="/api/courses">GET /api/courses</button>
+          <button type="button" data-path="/api/status">GET /api/status</button>
+          <button type="button" data-path="/api/headers">GET /api/headers</button>
+          <button type="button" data-path="/api/subscribe" data-method="POST">POST /api/subscribe</button>
+          <button type="button" data-path="/api/admin">GET /api/admin</button>
+          <button type="button" data-path="/api/stats">GET /api/stats</button>
+          <button type="button" data-path="/api/missing">GET /api/missing</button>
+        </div>
+      </section>
+
+      <section aria-labelledby="response-heading">
+        <h2 id="response-heading">Response</h2>
+        <p id="response-status" role="status">Choose a route to send a request.</p>
+        <pre id="response-body"></pre>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

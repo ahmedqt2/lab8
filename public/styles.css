@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f6f9;
+  color: #192635;
+  font: 1rem/1.6 Inter, system-ui, sans-serif;
+}
+
+main {
+  max-width: 57rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.8rem, 5vw, 2.75rem);
+  line-height: 1.15;
+}
+
+header p {
+  max-width: 39rem;
+  margin: 0;
+}
+
+.api-panel {
+  display: grid;
+  grid-template-columns: 14rem minmax(0, 1fr);
+  gap: 1.75rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid #d6dfe8;
+  border-radius: 0.75rem;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.routes {
+  display: grid;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #b7cce0;
+  border-radius: 0.35rem;
+  background: #eef5fc;
+  color: #19446e;
+  font: 0.875rem/1.45 "IBM Plex Mono", Consolas, monospace;
+  text-align: left;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #dcecfb;
+}
+
+button:focus-visible {
+  outline: 2px solid #174e85;
+  outline-offset: 2px;
+}
+
+#response-status {
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+#response-body {
+  min-height: 10rem;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 0.35rem;
+  background: #162536;
+  color: #eef5fc;
+  font: 0.875rem/1.5 "IBM Plex Mono", Consolas, monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 38rem) {
+  .api-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+    padding: 1rem;
+  }
+}
