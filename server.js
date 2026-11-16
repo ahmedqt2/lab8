@@ -10,7 +10,6 @@ const courses = [
   { id: 'WEB102', title: 'JavaScript Fundamentals', credits: 3 },
   { id: 'WEB103', title: 'Introduction to Back-End Development', credits: 3 }
 ];
-
 let requestsServed = 0;
 
 function logRequest(req, res, next) {
